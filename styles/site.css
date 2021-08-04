@@ -1,0 +1,400 @@
+/* 
+
+FONTS: 
+
+Verdana
+Garamond 
+
+COLORS: 
+
+rgb(152, 173, 194)
+#e8e8e8
+#e0e0e0
+
+*/ 
+ 
+/* -----------------------------
+     Styles for header & nav
+     ----------------------------- */
+     #rotftitle {
+         width: fit-content; 
+         height: 72px;
+         margin-left: 4em;
+         border-bottom: solid 3px black;
+     }
+     
+     h2 {
+        color: black;
+        font-size: 50px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif 
+    }
+
+    nav.primary {
+        font-size: 22px;
+        font-family: Garamond, serif;
+        font-weight: 800;
+}
+
+nav.primary >ul > li > a:hover {
+    color: white;
+    background-color: black;
+}
+
+h1 {
+    color: black;
+        font-size: 50px;
+        font-family: Garamond, serif;
+}
+
+nav.primary > ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding-inline-start: 0px;
+    justify-content: left;
+    margin-left: 3em;
+    margin-top: 1.5em;
+}
+
+nav.primary > ul > li:before {
+    content: '|'
+}
+
+nav.primary > ul > li:first-child:before {
+    content: ''
+}
+
+nav.primary > ul > li > a {
+    padding-right: 1em;
+    padding-left: 1em;
+    text-decoration: none;
+    color: black;
+}
+
+/* SUPPOSED TO MAKE THE NAV RESPONSIVE...? 
+
+@media screen and (max-width: 65em) {
+    nav.primary #menu {
+      display: block;
+      text-align: left;
+      background-image: url(..images/pancake-menu);
+      background-repeat: no-repeat;
+      padding-left: 40px;
+    }
+
+    */
+
+ /* -----------------------------
+     Styles for footer
+     ----------------------------- */
+  
+     footer {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(152, 173, 194);
+        color: white;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        clear:left;
+        clear: right;
+    }
+    
+    footer > p {
+        padding-left: 1em;
+        font-size: 9pt;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        line-height: 8pt;
+        
+    }
+    #emersonquote {
+        font-size: 10pt;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-style: italic;
+        text-align: center;
+        line-height: 14pt;
+    }
+    
+
+    /* --- HOMEPAGE --- */ 
+
+/* -----------------------------
+     Styles for "Homepage HEADER"
+     ----------------------------- */
+
+     #seatedsphinx {
+        padding-left: 7em;
+        padding-right: 3em;
+        position: absolute;
+      bottom: 100;
+      right: 0;
+      top: 0;
+    }
+    
+    .quote {
+        display: flex; 
+        color: white; 
+        background-color:rgb(152, 173, 194);
+        font-size: 22pt;
+        font-style: italic;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        line-height: 40pt;
+        padding-left: 2em;
+        margin-top: 2em;
+        padding-bottom: 0.2em;
+        padding-top: 0.2em;
+    
+    }
+    
+    #attribution {
+        margin-right: 30em;
+        margin-top: 6em;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 18pt;
+        color: white;
+        background-color:rgb(152, 173, 194);
+        font-style: italic;
+        line-height: 30pt;
+    }
+
+/* -----------------------------
+     Styles for HOMEPAGE "Riddles"
+     ----------------------------- */
+  
+     div.riddleshome {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        vertical-align: middle;
+        width: fit-content;
+        margin-left: 4em;
+    }
+    
+    div.riddleshome > p {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    
+    div.articles {
+        display: flex;
+        margin-top: 2em;
+    }
+    
+    
+    div.articles > article {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        background-color: #E8E8E8;
+        max-width: 40%;
+        margin-bottom: 1em;
+        margin-right: 2em;
+        padding-left: 1em;
+        padding-right: 1em;
+
+    }
+    
+    
+    div.articles > article > h3 { 
+       text-align: left;
+       margin-left: 1em;
+       margin-right: 1em;
+       font-family: Garamond, serif;
+       font-size: 24;
+       line-height: 24pt;
+       
+    }
+    
+    div.articles > article > p {
+       text-align: left;
+       margin-left: 1em;
+       margin-right: 1em;
+       font-style: italic;
+    
+    } 
+
+    button {
+        float: right;
+        background-color:rgb(152, 173, 194);
+        color: white;
+        font-size: 22pt;
+        font-family: Garamond, serif;
+        font-style: bolder;
+        padding-right: 1em;
+        padding-left: 1em;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        margin-right: 5em;
+        margin-top: 1em;
+        margin-bottom: 3em;
+        cursor: pointer;
+        border-radius: 10px;
+        border: none;
+        box-shadow: 0px 2px 16px #999;
+    }
+
+    /*
+    #clickforriddles {
+        font-style: italic;
+        font-style: bolder;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 22pt;
+        margin-left: 3em;
+        margin-top: 3em;
+        text-align: center;
+    }
+    */
+    
+
+    /* -----------------------------
+     Styles for HOMEPAGE "Writing Riddles"
+     ----------------------------- */
+  
+  
+  div.writingriddleshome {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding-left: 4em;
+    margin-top: 2em;
+
+}
+
+
+div.writingriddleshome > h1 {
+    color: black;
+    font-size: 28pt;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-style: italic;
+}
+
+#starthere {
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24pt;
+    font-style: bolder;
+    color: rgb(152, 173, 194);
+}
+
+   
+}
+
+ /* -----------------------------
+     Styles for RIDDLES page
+     ----------------------------- */
+
+     .riddleinstructions {
+        background-color:rgb(152, 173, 194); 
+     }
+     
+     
+     
+     .riddleinstructions > p {
+        background-color:rgb(152, 173, 194); 
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 16pt;
+        font-style: bolder;
+        font-style: italic;
+        padding: 1em;
+        margin-top: 2em;
+        margin-left: 3em;
+     }
+
+     #seatedsphinxsmall {
+        padding-left: 7em;
+        padding-right: 3em;
+        position: absolute;
+      bottom: 100;
+      right: 0;
+      top: 0;
+     }
+
+     div.riddles {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 100%;
+        margin-right: 3em;
+        margin-left: 3em;
+        margin-top: 5em;
+        margin-bottom: 2em;
+    }
+
+    div.riddles > section {
+        padding: 0.5em;
+        box-shadow: 0px 2px 16px #999;
+        margin-bottom: 1.5em;
+    }
+
+    
+
+    /* -----------------------------
+     Styles for WRITING RIDDLES page
+     ----------------------------- */
+
+     #writingriddlesquestion {
+        background-color:rgb(152, 173, 194); 
+     }
+     #writingriddlesquestion > p {
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 16pt;
+        font-style: bolder;
+        font-style: italic;
+        margin-left: 3em;
+        padding: 1em;
+        margin-top: 0.2em;
+}
+
+#sphinxbanner {
+    margin-top: 2.5em;
+
+}
+
+ #resources > p {
+    
+    font-style: italic;
+    margin-left: 3em;
+    padding: 1em;
+    margin-top: 0.2em;
+}
+
+#resources {
+    background-color: #e8e8e8; 
+    float: right;
+    margin-top: 2em;
+    margin-right: 3em;
+    color: black;
+    font-family: Garamond, serif;
+    font-size: 24pt;
+    font-style: bolder;
+    padding: 1em;
+    text-align: left;
+}
+
+#resources > ul > li {
+    color: black;
+    font-family: Garamond, serif;
+    font-size: 20pt;
+    font-style: bolder;
+    line-height: 40pt;
+    text-align: left;
+}
+}
+
+
+/* STYLES FOR INFOGRAPHIC PAGE */
+
+div.infographic {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  width: 50%;
+  max-width: 100%;
+   
+}
