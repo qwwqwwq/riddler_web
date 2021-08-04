@@ -1,29 +1,35 @@
-
 "use strict";
+let riddles = [
+    "lettera",
+    "fishingline",
+    "leaves",
+    "god",
+    "river",
+    "ice",
+    "heart",
+    "wine",
+    "wave"
+]
+
 window.addEventListener('DOMContentLoaded', function(){
     console.log("dom content is ready!");
-    let menu = document.querySelector('#menu');
-    console.log(menu);
-    menu.addEventListener('click',function(ev){
-        ev.preventDefault();
-        let nav = document.querySelector('nav.primary');
-        console.log(nav);
-        if (nav.classList.contains('displayonpage')) {
-            nav.classList.remove('displayonpage'); 
-        } else {
-            nav.classList.add('displayonpage');
-        }
+
+    riddles.forEach((riddle, i) => {
+        let riddleImage = document.getElementById(riddle);
+
+        riddleImage.addEventListener('click', function(ev){
+            console.log(riddle + " clicked!")
+            let riddleText = document.getElementById(riddle + '-answer');
+            let visibility = riddleText.style.visibility;
+
+            if (visibility === "hidden") {
+                riddleText.style.visibility = "visible";
+            } else if (visibility === "visible") {
+                riddleText.style.visibility = "hidden";
+            } else {
+                riddleText.style.visibility = "visible";
+            }
+        });
     });
-});
-
-  // How do I add a click listener so that when you click an image (in the "riddles.html" doc) it changes to another image? Also do I have to hard code this for every individual riddle? // 
-
-function changeImg() {
-    var image = document.getElementById('lettera');
-        if (image.src.match("img/more.jpg")) {
-                                image.src = "images/letter_a answer.png";
-                            }
-                            else {
-                                image.src = "images/A_riddle-01.jpg";
-                            }
-                        }
+}
+);

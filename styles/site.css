@@ -398,3 +398,7 @@ div.infographic {
   max-width: 100%;
    
 }
+
+.riddle-answer {
+    visibility: hidden;
+}
